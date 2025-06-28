@@ -5,8 +5,8 @@ import { RouterLink } from "vue-router";
 <template>
   <header class="bg-gray-800 text-white p-4">
     <nav class="flex gap-4">
-      <RouterLink to="/">Home</RouterLink>
-      <RouterLink to="/about">About</RouterLink>
+      <RouterLink to="/">dashboard</RouterLink>
+      <RouterLink to="/loan">Loan</RouterLink>
     </nav>
   </header>
 </template>
