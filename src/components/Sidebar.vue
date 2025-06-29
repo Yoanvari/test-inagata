@@ -13,21 +13,21 @@ import SidebarItem from "./SidebarItem.vue";
       <!-- dashboard -->
       <SidebarItem to="/dashboard" icon="Home" label="Dashboard" />
       <!-- transactions -->
-      <SidebarItem to="/transaction" icon="Loan" label="Transactions" />
+      <SidebarItem to="/transaction" icon="Transaction" label="Transactions" />
       <!-- accounts -->
-      <SidebarItem to="/account" icon="Home" label="Accounts" />
+      <SidebarItem to="/account" icon="Account" label="Accounts" />
       <!-- investments -->
-      <SidebarItem to="/investment" icon="Home" label="Investments" />
+      <SidebarItem to="/investment" icon="Investment" label="Investments" />
       <!-- credit cards -->
-      <SidebarItem to="/credit-card" icon="Home" label="Credit Cards" />
+      <SidebarItem to="/credit-card" icon="Credit" label="Credit Cards" />
       <!-- loan -->
       <SidebarItem to="/loan" icon="Loan" label="Loans" />
       <!-- services -->
-      <SidebarItem to="/service" icon="Loan" label="Services" />
+      <SidebarItem to="/service" icon="Service" label="Services" />
       <!-- previlages -->
-      <SidebarItem to="/privilege" icon="Loan" label="My Privileges" />
+      <SidebarItem to="/privilege" icon="Privilege" label="My Privileges" />
       <!-- setting -->
-      <SidebarItem to="/setting" icon="Loan" label="Setting" />
+      <SidebarItem to="/setting" icon="Setting" label="Setting" />
     </nav>
   </aside>
 </template>

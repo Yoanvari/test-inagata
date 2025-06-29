@@ -3,7 +3,7 @@ import Dashboard from "../pages/Dashboard.vue";
 import Loan from "../pages/Loan.vue";
 
 const routes = [
-  { path: "/", component: Dashboard },
+  { path: "/dashboard", component: Dashboard },
   { path: "/loan", component: Loan },
 ];
 
