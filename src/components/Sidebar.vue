@@ -4,7 +4,7 @@ import SidebarItem from "./SidebarItem.vue";
 </script>
 
 <template>
-  <aside class="bg-[#ffffff]">
+  <aside class="bg-[#ffffff] border-r-[1px] border-[#E6EFF5]">
     <nav class="flex flex-col text-[#B1B1B1] font-medium text-[18px] w-[250px]">
       <!-- logo -->
       <div class="pt-[31px] pl-[38px] pb-[46px]">

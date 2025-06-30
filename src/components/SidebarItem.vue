@@ -25,7 +25,7 @@ const isActive = computed(() => route.path === props.to);
       <span class="pl-[26px]">{{ label }}</span>
     </RouterLink>
     <div
-      class="absolute bottom-0 left-0 h-full w-[6px] rounded-br-full rounded-tr-full"
+      class="absolute bottom-0 left-0 h-full w-[6px] rounded-br-[10px] rounded-tr-[10px]"
       :class="isActive ? 'bg-[#2D60FF]' : 'bg-white'"
     ></div>
   </div>
