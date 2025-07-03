@@ -1,5 +1,30 @@
 <script setup lang="ts">
 import Icon from "../components/Icon.vue";
+import { useRoute } from "vue-router";
+import { computed } from "vue";
+
+const route = useRoute();
+
+const pageTitle = computed(() => {
+  const path = route.path;
+
+  if (path.startsWith("/setting")) {
+    return "Setting";
+  }
+
+  const titleMap: Record<string, string> = {
+    "/dashboard": "Overview",
+    "/loan": "Loans",
+    "/transaction": "Transactions",
+    "/account": "Accounts",
+    "/investment": "Investments",
+    "/credit-card": "Credit Cards",
+    "/service": "Services",
+    "/privilege": "Privileges",
+  };
+
+  return titleMap[path] || "Overview";
+});
 </script>
 
 <template>
@@ -7,7 +32,7 @@ import Icon from "../components/Icon.vue";
     class="bg-[#ffffff] text-white border-b-[1px] border-[#E6EFF5] h-[101px] items-center justify-between flex"
   >
     <div class="font-inter font-semibold text-[28px] text-[#343C6A] pl-[40px]">
-      Overview
+      {{ pageTitle }}
     </div>
     <div class="flex flex-row items-center">
       <!-- search -->
