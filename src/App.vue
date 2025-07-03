@@ -6,7 +6,7 @@ import Sidebar from "./components/Sidebar.vue";
 <template>
   <div class="flex h-screen font-inter">
     <Sidebar />
-    <div class="flex-col w-full">
+    <div class="flex-col sm:w-full">
       <Header />
       <router-view />
     </div>
