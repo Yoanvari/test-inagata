@@ -11,7 +11,12 @@ const props = defineProps<{
 
 const route = useRoute();
 
-const isActive = computed(() => route.path === props.to);
+const isActive = computed(() => {
+  if (props.to === "/setting") {
+    return route.path.startsWith("/setting");
+  }
+  return route.path === props.to;
+});
 </script>
 
 <template>
@@ -21,7 +26,7 @@ const isActive = computed(() => route.path === props.to);
       class="flex flex-row items-center h-[60px] pl-[44px]"
       :class="isActive ? 'text-[#2D60FF]' : 'text-[#B1B1B1]'"
     >
-      <Icon :name="icon" class="w-[25px] h-[25px]" />
+      <Icon :name="icon" class="sm:size-[20px] lg:size-[25px]" />
       <span class="pl-[26px]">{{ label }}</span>
     </RouterLink>
     <div

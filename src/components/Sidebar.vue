@@ -5,7 +5,9 @@ import SidebarItem from "./SidebarItem.vue";
 
 <template>
   <aside class="bg-[#ffffff] border-r-[1px] border-[#E6EFF5]">
-    <nav class="flex flex-col text-[#B1B1B1] font-medium text-[18px] w-[250px]">
+    <nav
+      class="hidden sm:flex flex-col w-[231px] text-[#B1B1B1] font-medium text-[16px] lg:text-[18px] lg:w-[250px]"
+    >
       <!-- logo -->
       <div class="pt-[31px] pl-[38px] pb-[46px]">
         <Icon name="Logo" class="w-[148px] h-[36px]" />
